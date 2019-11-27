@@ -28,9 +28,6 @@
 \begin{document}
 
 \maketitle
-\begin{frame}{Outline}
-\tableofcontents
-\end{frame}
 
 \begin{frame}{intro}
 \begin{block}{abstract}
@@ -204,4 +201,30 @@ built in functions for array programming : build ifold and length
   \end{center}
 \end{frame}
 
+\begin{frame}{other work}
+  \begin{itemize}
+    \item standard ml compilers/libraries : pytorch, tensorflow
+    \item stalingrad
+    \item Pilatus
+    \item  category approach
+    \item other numerical DSL: Halide
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{conclusion}
+
+  The nitty gritty details of AD can be horrendous in terms of compiler
+  optimization etc. The authors show how complicated it can be to represent
+  differentiation at a high level and still keep the implementation efficient.\\[1ex]
+
+
+  However the authors should have made a choice between high level and compiler
+  optimizations. Elliot's approach is ``wayy'' more general, the high level api
+  of df smooth is mostly there to enforce invariants to enable optimization.\\[1ex]
+
+
+  The question of how to effectively model mathematical properties which are
+  simple for cegep students but very hard to encode precisely is more important.
+
+\end{frame}
 \end{document}

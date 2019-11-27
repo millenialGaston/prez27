@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.22)  27 NOV 2019 05:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.22)  27 NOV 2019 05:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,91 +1054,94 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (./prezad.nav) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./prezad.toc) [2
-
-] [3
+[2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 55.
+ut line 52.
 
 (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-) [4
+) [3
 
 ]
-[5
+[4
+
+] [5
 
 ] [6
 
 ] [7
 
-] [8
-
 ]
-<"""pipeline".png, id=262, 1240.635pt x 630.355pt>
+<"""pipeline".png, id=235, 1240.635pt x 630.355pt>
 File: """pipeline".png Graphic file (type png)
 <use """pipeline".png>
-Package pdftex.def Info: """pipeline".png  used on input line 126.
+Package pdftex.def Info: """pipeline".png  used on input line 123.
 (pdftex.def)             Requested size: 309.7781pt x 157.39598pt.
- [9
+ [8
 
- <./pipeline.png>] [10
+ <./pipeline.png>] [9
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-64.
+61.
 
 (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [11
+) [10
 
 ]
-<"""example2".png, id=344, 735.74875pt x 226.8475pt>
+<"""example2".png, id=318, 735.74875pt x 226.8475pt>
 File: """example2".png Graphic file (type png)
 <use """example2".png>
-Package pdftex.def Info: """example2".png  used on input line 178.
+Package pdftex.def Info: """example2".png  used on input line 175.
 (pdftex.def)             Requested size: 309.7781pt x 95.51413pt.
- [12
+ [11
 
  <./example2.png>]
-<"""fsmooth1".png, id=373, 1108.14pt x 560.0925pt>
+<"""fsmooth1".png, id=346, 1108.14pt x 560.0925pt>
 File: """fsmooth1".png Graphic file (type png)
 <use """fsmooth1".png>
-Package pdftex.def Info: """fsmooth1".png  used on input line 187.
+Package pdftex.def Info: """fsmooth1".png  used on input line 184.
 (pdftex.def)             Requested size: 309.7781pt x 156.56844pt.
 
-[13
+[12
 
  <./fsmooth1.png>]
-<"""fsmooth2".png, id=402, 993.7125pt x 418.56375pt>
+<"""fsmooth2".png, id=375, 993.7125pt x 418.56375pt>
 File: """fsmooth2".png Graphic file (type png)
 <use """fsmooth2".png>
-Package pdftex.def Info: """fsmooth2".png  used on input line 195.
+Package pdftex.def Info: """fsmooth2".png  used on input line 192.
 (pdftex.def)             Requested size: 309.7781pt x 130.4815pt.
- [14
+ [13
 
  <./fsmooth2.png>]
-<"""matrixtranspose".png, id=429, 719.68875pt x 339.2675pt>
+<"""matrixtranspose".png, id=404, 719.68875pt x 339.2675pt>
 File: """matrixtranspose".png Graphic file (type png)
 <use """matrixtranspose".png>
-Package pdftex.def Info: """matrixtranspose".png  used on input line 204.
+Package pdftex.def Info: """matrixtranspose".png  used on input line 202.
 (pdftex.def)             Requested size: 309.7781pt x 146.03748pt.
- [15
+ [14
 
  <./matrixtranspose.png>]
+[15
+
+] [16
+
+]
 \tf@nav=\write6
 \openout6 = `prezad.nav'.
 
@@ -1148,41 +1151,47 @@ Package pdftex.def Info: """matrixtranspose".png  used on input line 204.
 \tf@snm=\write8
 \openout8 = `prezad.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
-
-(./prezad.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 230.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 230.
+ (./prezad.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 230.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 230.
 Package rerunfilecheck Info: File `prezad.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18988 strings out of 492167
- 352401 string characters out of 6131557
+ 18992 strings out of 492167
+ 352432 string characters out of 6131557
  425100 words of memory out of 5000000
- 22866 multiletter control sequences out of 15000+600000
+ 22869 multiletter control sequences out of 15000+600000
  13918 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,15n,59p,800b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public
-/cm-super/sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0
-500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist
-/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
-ftt1000.pfb>
-Output written on prezad.pdf (15 pages, 372849 bytes).
+pdfTeX warning (dest): name{Navigation17} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
+10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/c
+m-super/sfsi1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss050
+0.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/sha
+re/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist/f
+onts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sft
+t1000.pfb>
+Output written on prezad.pdf (16 pages, 376041 bytes).
 PDF statistics:
- 517 PDF objects out of 1000 (max. 8388607)
- 457 compressed objects within 5 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 42 named destinations out of 1000 (max. 500000)
  104 words of extra memory for PDF output out of 10000 (max. 10000000)
 
