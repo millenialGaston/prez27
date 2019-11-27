@@ -1,5 +1,3 @@
-% Created 2019-11-27 Wed 03:55
-% Intended LaTeX compiler: pdflatex
 \documentclass[smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -15,6 +13,8 @@
 \usepackage{capt-of}
 \usepackage{hyperref}
 \usetheme{Madrid}
+\graphicspath{.}
+
 \date{\today}
 \title{Efficient differentiable programming}
 \hypersetup{
@@ -22,8 +22,9 @@
  pdftitle={Efficient differentiable programming},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 26.3 (Org mode 9.3)}, 
+ pdfcreator={Emacs 26.3 (Org mode 9.3)},
  pdflang={English}}
+
 \begin{document}
 
 \maketitle
@@ -31,7 +32,7 @@
 \tableofcontents
 \end{frame}
 
-\begin{frame}[label={sec:org723bc6a}]{intro}
+\begin{frame}{intro}
 \begin{block}{abstract}
 \begin{itemize}
 \item an AD system for higher order functional array-processing language.
@@ -44,7 +45,7 @@ through a number of compile time optimizing transformations, e.g. fusion
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org3c48878}]{AD in general}
+\begin{frame}{AD in general}
 Two main mode for AD:
 \begin{itemize}
 \item forward mode computes the derivative of the original computation while making a forward pass (across the computational graph)
@@ -67,11 +68,12 @@ operator.
 \begin{frame}[label={sec:orgeba2a44}]{ML}
 \begin{block}{supervised learning setup}
 AI is pretty simple nowadays, it's all machine learning, which means
-given a dataset of N samples of the form $$ \{(x_1,y_1), \ldots , (x_{N},
-y_{N})\} $$
+given a dataset of N samples of the form
+$$ \{(x_1,y_1), \ldots , (x_{N}, y_{N})\} $$
 
 where the x's are the \emph{feature vectors}  and the y's the result of the prediction,
-we wish to find a good predictor, i.e. a function $$ g : X \rightarrow Y $$.
+we wish to find a good predictor, i.e. a function
+$$ g : X \rightarrow Y $$.
 
 To define the goodness of a predictor we define a \emph{loss function}
 $$ f: Y \times Y \rightarrow \mathbb R $$
@@ -117,9 +119,50 @@ removed through \alert{deforestation} aka \alert{loop fusion}.
 \end{itemize}
 \end{frame}
 
-\begin{frame}[label={sec:org1116535}]{overview}
+\begin{frame}{overview}
+\begin{block}{Pipeline}
 \begin{center}
-\includegraphics[width=.9\linewidth]{/home/gaston/org/.attach/_20191127_03551978635343_538069870108439_1882167201545322496_n.png}
+\includegraphics[width=.9\linewidth]{pipeline.png}
+\end{center}
+\end{block}
+\end{frame}
+
+
+\begin{frame}{d f-smooth and M-smooth}
+
+  \begin{itemize}
+    \item The highest level /api/ mimicks the conventional
+      interfaces to high level linear algebra libraries and
+      languages such as MatLab and Numpy
+
+    \item The program is then lowered into its representation in
+      f smooth which computes the actual derivatives. After this computation
+      many optimizations can be applied before...
+
+    \item  Compiling once again to C code, where memory is managed in a
+      stack like manner by using the destination passing style technique,
+      which is just a fancy way to say that the caller is responsible for
+      the callees memory and passes to it the memory location where it can
+      store the results.
+
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{f smooth}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{fsmooth1.png}
 \end{center}
 \end{frame}
+
+\begin{frame}{f smooth 2}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{fsmooth2.png}
+\end{center}
+
+\end{frame}
+
+
 \end{document}

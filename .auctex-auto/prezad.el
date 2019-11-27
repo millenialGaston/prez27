@@ -1,5 +1,5 @@
 (TeX-add-style-hook
- "prez27novembre"
+ "prezad"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
                      '(("beamer" "smaller")))

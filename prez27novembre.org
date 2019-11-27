@@ -11,27 +11,80 @@
 #+startup: beamer
 #+LaTeX_CLASS: beamer
 #+BEAMER_FRAME_LEVEL: 2
-#+LATEX_CLASS_OPTIONS: [presentation]
+#+LATEX_CLASS_OPTIONS: [smaller]
 #+BEAMER_THEME: Madrid
 * intro
 ** abstract
-:PROPERTIES:
-:BEAMER_env: block
-:END:
 - an AD system for higher order functional array-processing language.
 - supports both source-to-source forward mode AD and global optimizations
 - gradient computation with forward AD can be as efficient as reverse mode
 - Jacobian matrices needed for practical numerical schemes can be efficiently computed
+The key contribution is in making traditional forward mode AD efficient
+through a number of compile time optimizing transformations, e.g. fusion
 
-* motivation
-:PROPERTIES:
-:BEAMER_env: block
-:END:
-** machine learning optimization framework
+* AD in general
 
-* paper
-** ipso
-:PROPERTIES:
-:BEAMER_env: block
-:END:
-lorum
+ Two main mode for AD:
+  - forward mode computes the derivative of the original computation while making a forward pass (across the computational graph)
+  - Reverse mode does a forward pass and then a backwards one to compute the adjoint derivatives.
+For reverse mode  we associate to every variable $$ v_i $$ its adjoint $$ \frac{\partial y}{\partial v_i} $$
+
+* AD in ML
+
+We want a constant time computation of differentiation as an important
+assumption in algorithms is often that the gradient of a function has the
+same asymptotic computational cost as the original function.
+
+Most algorithms in optimization have their computational complexity defined in
+the number of calls to an /oracle/. In *first order methods* the oracle
+is usually either gradient, a subgradient, or maybe some funky proximal
+operator.
+
+* ML
+** supervised learning setup
+AI is pretty simple nowadays, it's all machine learning, which means
+given a dataset of N samples of the form $$ \{(x_1,y_1), \ldots , (x_{N},
+y_{N})\} $$
+
+where the x's are the /feature vectors/  and the y's the result of the prediction,
+we wish to find a good predictor, i.e. a function $$ g : X \rightarrow Y $$.
+
+To define the goodness of a predictor we define a /loss function/
+$$ f: Y \times Y \rightarrow \mathbb R $$
+
+Define the empirical risk minimization has the average of all the losses over
+the sample. Then the best predictor is the one that minimizes the empirical
+risk.
+
+* jacobian
+- In general if $$ f : \mathbb R^n \rightarrow \mathbb R^m $$ we define the Jacobian the following way:
+
+
+\begin{equation}
+J_f = \frac{\partial f}{\partial x} = \begin{bmatrix}
+\frac{\partial f_{1}}{\partial x_{1}} & \cdots &
+\frac{\partial f_{1}}{\partial x_{n}} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial f_{m}}{\partial  x_{1} } & \cdots &
+\frac{\partial f_{m}}{\partial x_{n}}
+\end{bmatrix}
+\end{equation}
+
+Forward mode computes the Jacobian through columns whereas reverse mode computes rows.
+
+Forward mode is efficient when there are many more rows than columns and vice
+versa for reverse mode. Reverse mode is thus good for very large dimensions
+in the input. Choosing the optimal mix between the two  is NP complete.
+
+
+* remarks on the jacobian
+- When computing the matrix there are many loop invariant computations, this
+  calls for /loop-invariant code motion/
+- Even if the asymptotic computational complexity of a gradient call
+  is the same as one for the original function the hidden constant
+  can be quite big in practice. Many intermediate vectors can be
+  removed through *deforestation* aka *loop fusion*.
+
+* overview
+
+[[attach:_20191127_03551978635343_538069870108439_1882167201545322496_n.png]]

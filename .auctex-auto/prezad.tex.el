@@ -1,8 +1,8 @@
 (TeX-add-style-hook
- "prez27novembre"
+ "prezad.tex"
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-class-options
-                     '(("beamer" "smaller")))
+                     '(("article" "11pt") ("beamer" "smaller")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("fontenc" "T1") ("ulem" "normalem")))
    (add-to-list 'LaTeX-verbatim-environments-local "semiverbatim")
@@ -16,8 +16,8 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "beamer"
-    "beamer10"
+    "article"
+    "art11"
     "inputenc"
     "fontenc"
     "graphicx"
@@ -30,6 +30,8 @@
     "textcomp"
     "amssymb"
     "capt-of"
-    "hyperref"))
+    "hyperref"
+    "beamer"
+    "beamer10"))
  :latex)
 

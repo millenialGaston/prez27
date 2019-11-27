@@ -1,5 +1,32 @@
-% Created 2019-11-27 Wed 03:55
+% Created 2019-11-27 Wed 04:00
 % Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
 \documentclass[smaller]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -17,13 +44,14 @@
 \usetheme{Madrid}
 \date{\today}
 \title{Efficient differentiable programming}
-\hypersetup{
- pdfauthor={},
- pdftitle={Efficient differentiable programming},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 26.3 (Org mode 9.3)}, 
- pdflang={English}}
+\hypersetup\{
+ pdfauthor=\{\},
+ pdftitle=\{Efficient differentiable programming\},
+ pdfkeywords=\{\},
+ pdfsubject=\{\},
+ pdfcreator=\{Emacs 26.3 (Org mode 9.3)\},
+ pdflang=\{English\}\}
+
 \begin{document}
 
 \maketitle
@@ -31,7 +59,7 @@
 \tableofcontents
 \end{frame}
 
-\begin{frame}[label={sec:org723bc6a}]{intro}
+\begin{frame}{intro}
 \begin{block}{abstract}
 \begin{itemize}
 \item an AD system for higher order functional array-processing language.
@@ -44,7 +72,7 @@ through a number of compile time optimizing transformations, e.g. fusion
 \end{block}
 \end{frame}
 
-\begin{frame}[label={sec:org3c48878}]{AD in general}
+\begin{frame}{AD in general}
 Two main mode for AD:
 \begin{itemize}
 \item forward mode computes the derivative of the original computation while making a forward pass (across the computational graph)
@@ -67,11 +95,12 @@ operator.
 \begin{frame}[label={sec:orgeba2a44}]{ML}
 \begin{block}{supervised learning setup}
 AI is pretty simple nowadays, it's all machine learning, which means
-given a dataset of N samples of the form $$ \{(x_1,y_1), \ldots , (x_{N},
-y_{N})\} $$
+given a dataset of N samples of the form
+$$ \{(x_1,y_1), \ldots , (x_{N}, y_{N})\} $$
 
 where the x's are the \emph{feature vectors}  and the y's the result of the prediction,
-we wish to find a good predictor, i.e. a function $$ g : X \rightarrow Y $$.
+we wish to find a good predictor, i.e. a function
+$$ g : X \rightarrow Y $$.
 
 To define the goodness of a predictor we define a \emph{loss function}
 $$ f: Y \times Y \rightarrow \mathbb R $$
@@ -119,7 +148,8 @@ removed through \alert{deforestation} aka \alert{loop fusion}.
 
 \begin{frame}[label={sec:org1116535}]{overview}
 \begin{center}
-\includegraphics[width=.9\linewidth]{/home/gaston/org/.attach/_20191127_03551978635343_538069870108439_1882167201545322496_n.png}
+\includegraphics[width=.9\line width]{pipeline.png}
 \end{center}
 \end{frame}
+\end{document}
 \end{document}
