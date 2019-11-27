@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.22)  27 NOV 2019 04:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.22)  27 NOV 2019 05:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1091,29 +1091,54 @@ thkerncmss.
 <"""pipeline".png, id=262, 1240.635pt x 630.355pt>
 File: """pipeline".png Graphic file (type png)
 <use """pipeline".png>
-Package pdftex.def Info: """pipeline".png  used on input line 128.
+Package pdftex.def Info: """pipeline".png  used on input line 126.
 (pdftex.def)             Requested size: 309.7781pt x 157.39598pt.
  [9
 
  <./pipeline.png>] [10
 
 ]
-<"""fsmooth1".png, id=317, 1108.14pt x 560.0925pt>
-File: """fsmooth1".png Graphic file (type png)
-<use """fsmooth1".png>
-Package pdftex.def Info: """fsmooth1".png  used on input line 157.
-(pdftex.def)             Requested size: 309.7781pt x 156.56844pt.
- [11
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+64.
 
- <./fsmooth1.png>]
-<"""fsmooth2".png, id=344, 993.7125pt x 418.56375pt>
-File: """fsmooth2".png Graphic file (type png)
-<use """fsmooth2".png>
-Package pdftex.def Info: """fsmooth2".png  used on input line 165.
-(pdftex.def)             Requested size: 309.7781pt x 130.4815pt.
+(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+) [11
+
+]
+<"""example2".png, id=344, 735.74875pt x 226.8475pt>
+File: """example2".png Graphic file (type png)
+<use """example2".png>
+Package pdftex.def Info: """example2".png  used on input line 178.
+(pdftex.def)             Requested size: 309.7781pt x 95.51413pt.
  [12
 
+ <./example2.png>]
+<"""fsmooth1".png, id=373, 1108.14pt x 560.0925pt>
+File: """fsmooth1".png Graphic file (type png)
+<use """fsmooth1".png>
+Package pdftex.def Info: """fsmooth1".png  used on input line 187.
+(pdftex.def)             Requested size: 309.7781pt x 156.56844pt.
+
+[13
+
+ <./fsmooth1.png>]
+<"""fsmooth2".png, id=402, 993.7125pt x 418.56375pt>
+File: """fsmooth2".png Graphic file (type png)
+<use """fsmooth2".png>
+Package pdftex.def Info: """fsmooth2".png  used on input line 195.
+(pdftex.def)             Requested size: 309.7781pt x 130.4815pt.
+ [14
+
  <./fsmooth2.png>]
+<"""matrixtranspose".png, id=429, 719.68875pt x 339.2675pt>
+File: """matrixtranspose".png Graphic file (type png)
+<use """matrixtranspose".png>
+Package pdftex.def Info: """matrixtranspose".png  used on input line 204.
+(pdftex.def)             Requested size: 309.7781pt x 146.03748pt.
+ [15
+
+ <./matrixtranspose.png>]
 \tf@nav=\write6
 \openout6 = `prezad.nav'.
 
@@ -1123,20 +1148,21 @@ Package pdftex.def Info: """fsmooth2".png  used on input line 165.
 \tf@snm=\write8
 \openout8 = `prezad.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
- (./prezad.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
+
+(./prezad.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
 Package rerunfilecheck Info: File `prezad.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 18926 strings out of 492167
- 350838 string characters out of 6131557
+ 18988 strings out of 492167
+ 352401 string characters out of 6131557
  425100 words of memory out of 5000000
- 22815 multiletter control sequences out of 15000+600000
- 12979 words of font info for 36 fonts, out of 8000000 for 9000
+ 22866 multiletter control sequences out of 15000+600000
+ 13918 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,15n,59p,800b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/t
@@ -1151,11 +1177,12 @@ e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public
 500.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf-dist
 /fonts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss1440.pfb>
-Output written on prezad.pdf (12 pages, 282871 bytes).
+blic/cm-super/sfss1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
+ftt1000.pfb>
+Output written on prezad.pdf (15 pages, 372849 bytes).
 PDF statistics:
- 426 PDF objects out of 1000 (max. 8388607)
- 375 compressed objects within 4 object streams
- 33 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 517 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -119,12 +119,10 @@ removed through \alert{deforestation} aka \alert{loop fusion}.
 \end{itemize}
 \end{frame}
 
-\begin{frame}{overview}
-\begin{block}{Pipeline}
+\begin{frame}{Pipeline}
 \begin{center}
 \includegraphics[width=.9\linewidth]{pipeline.png}
 \end{center}
-\end{block}
 \end{frame}
 
 
@@ -149,6 +147,38 @@ removed through \alert{deforestation} aka \alert{loop fusion}.
 
 \end{frame}
 
+\begin{frame}{differentiation in df-smooth }
+
+  \begin{itemize}
+    \item source to source transformation based on the \texttt{deriv} construct
+    \item everything done at compile time, macro-ish
+    \item we can call \texttt{deriv} multiple times to get the derivative with respect
+      to a list of free variables.
+  \end{itemize}
+  \begin{enumerate}
+    \item first deriv constructs a lambda with the free variables as input parameters
+    \item the produced lambda is passed to the source-to-source differentiation
+      operator $ \mathcal D $
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}{example}
+  The derivative of the program \texttt{cos a} is represented
+  as $\texttt{snd} ((\mathcal D [[\texttt{fun a -> cos a}]]) (a,1)) $
+  which expands to
+  \begin{equation*}
+    \texttt{snd} ((\mathcal D [[ \texttt{fun a -> cos a}]] (a,1)))
+  \end{equation*}
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{example2.png}
+\end{center}
+
+\end{frame}
+
+
+
 \begin{frame}{f smooth}
 
 \begin{center}
@@ -161,8 +191,17 @@ removed through \alert{deforestation} aka \alert{loop fusion}.
 \begin{center}
 \includegraphics[width=.9\linewidth]{fsmooth2.png}
 \end{center}
-
+built in functions for array programming : build ifold and length
 \end{frame}
 
+
+
+\begin{frame}{loop fusion example}
+  In this example we show that taking the tranpose twice of
+  a Matrix is the ``same'' as just copying it.
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{matrixtranspose.png}
+  \end{center}
+\end{frame}
 
 \end{document}
