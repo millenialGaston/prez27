@@ -1,0 +1,37 @@
+#+title: Efficient differentiable programming
+#+DESCRIPTION:
+#+KEYWORDS:
+#+LANGUAGE:  en
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:https://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:
+#+LINK_HOME:
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+BEAMER_FRAME_LEVEL: 2
+#+LATEX_CLASS_OPTIONS: [presentation]
+#+BEAMER_THEME: Madrid
+* intro
+** abstract
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- an AD system for higher order functional array-processing language.
+- supports both source-to-source forward mode AD and global optimizations
+- gradient computation with forward AD can be as efficient as reverse mode
+- Jacobian matrices needed for practical numerical schemes can be efficiently computed
+
+* motivation
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+** machine learning optimization framework
+
+* paper
+** ipso
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+lorum
